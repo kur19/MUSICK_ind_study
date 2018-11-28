@@ -14,33 +14,32 @@ function setup() {
     console.log('Chatbot ready!');
     bot.sortReplies();
   }
-function brainError() {
+  function brainError() {
     console.log('Chatbot error!')
-}
-//let button = select('#submit');
-let user_input = select('#user_input');
-let output = select('#output');
+  }
+  //let button = select('#submit');
+  let user_input = select('#user_input');
+  let output = select('#output');
 
-//button.mousePressed(chat);
+  //button.mousePressed(chat);
 
-function gotSpeech() {
- if (speechRec.resultValue) {
-   let input = speechRec.resultString;
-   user_input.value(input);
+  function gotSpeech() {
+    if (speechRec.resultValue) {
+      let input = speechRec.resultString;
+      console.log(input);
+      //user_input.value(input);
+      bot.reply("local-user", input).then(function(reply) {
+        speech.speak(reply);
+        // output.html(reply);
+        console.log(reply);
 
-   bot.reply("local-user", input).then(function(reply) {
-     speech.speak(reply);
-     output.html(reply);
-   })
+      });
+    }
+  }
 
 
- }
-}
-
-
-
-//function chat() {
+  //function chat() {
   //let input = user_input.value();
 
-//}
+  //}
 }
