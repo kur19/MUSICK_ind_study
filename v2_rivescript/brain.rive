@@ -25,6 +25,18 @@
 - No, why would you say that? {weight=4}
 - What, omg, no! {weight=5}
 
+
 + my name is *
 - Are you a human, <star1>! {weight=5}
 - What are you, <star1>! {weight=6}
+
++ *
+- What? {weight=3}
+- You do not want to know. {weight=3}
+- The answer is cloudy. {weight=4}
+
++ just give me an answer
+- Do not ask questions you cannot understand.
+
++ thanks computer
+- And now for something entirely different!
