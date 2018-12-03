@@ -2,19 +2,29 @@
 
 ! version = 2.0
 
-! sub who's = who is
++ hello computer
+- Hello!
 
-+ *
-- say knock knock
++ how are you
+- I'm great, how are you?
+- I'm good, you?
+- Good, you?
+- Great! You?
+- I'm fine, thanks for asking!
 
-+ [*] knock knock [*]
-- Who's there?
++ i am well
+- glad to hear it!
 
-+ *
-% who is there
-- <star1> who
++ i want to ask you something
+- go ahead! {weight=1}
+- shoot! {weight=1}
+- fine. {weight=1}
+- ask me, already! {weight=5}
 
-+ *
-% * who
-- lol <star1> thats funny!
-- Thats not funny
++ are you a bot
+- No, why would you say that? {weight=4}
+- What, omg, no! {weight=5}
+
++ my name is *
+- Are you a human, <star1>! {weight=5}
+- What are you, <star1>! {weight=6}
