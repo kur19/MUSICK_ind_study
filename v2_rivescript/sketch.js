@@ -1,5 +1,15 @@
+let der;
+
 function setup() {
   noCanvas();
+  console.log("in standby mode, click mouse to start system!");
+}
+
+function mousePressed(){
+  speechSetup();
+}
+
+function speechSetup(){
   let speech = new p5.Speech();
   let speechRec = new p5.SpeechRec('en-US', gotSpeech);
   let continuous = true;

@@ -19,7 +19,7 @@
 - go ahead! {weight=1}
 - shoot! {weight=1}
 - fine. {weight=1}
-- ask me, already! {weight=5}
+- ask me, already! {weight=2}
 
 + are you a bot
 - No, why would you say that? {weight=4}
