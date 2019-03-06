@@ -25,6 +25,10 @@ function speechSetup() {
     // start the listener
     speechRec.start();
 
+    speechRec.onStart = function() {
+        console.log("I am listening...");
+    };
+
     // function to execute when speaking starts
     speech.onStart = function() {
         // console.log("started...");
@@ -32,7 +36,7 @@ function speechSetup() {
 
     // function to execute when speaking stops
     speech.onEnd = function() {
-        // console.log("stopped talking...");
+        console.log("stopped talking...");
         // restart listener
         speechRec.start();
     };
