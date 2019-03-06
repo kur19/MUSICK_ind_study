@@ -5,15 +5,33 @@
 + hello computer
 - Hello!
 
-+ how are you
++ hello *
+- Hello <star1>!
+
++ * how are you
 - I'm great, how are you?
 - I'm good, you?
 - Good, you?
 - Great! You?
 - I'm fine, thanks for asking!
 
++ * thanks for asking
++ thanks for asking
+- You are welcome.
+
++ glad to hear it
+- You are welcome.
+
 + i am well
 - glad to hear it!
+
+
++ you are welcome
+- What is life?
+- What is the meaning of existence?
+- What is you sign?
+
+
 
 + i want to ask you something
 - go ahead! {weight=1}
@@ -27,13 +45,20 @@
 
 
 + my name is *
++ my name is
 - Are you a human, <star1>! {weight=5}
 - What are you, <star1>! {weight=6}
+
+
++ the answer is cloudy
+- what does that mean?
+
 
 + *
 - What? {weight=3}
 - You do not want to know. {weight=3}
 - The answer is cloudy. {weight=4}
+
 
 + just give me an answer
 - Do not ask questions you cannot understand.
