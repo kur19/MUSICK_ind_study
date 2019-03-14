@@ -2,28 +2,28 @@
 
 ! version = 2.0
 
-+ hello computer
++ hi
 - Hello!
 
 + hello *
 - Hello <star1>!
 
-+ * how are you
++ how are you
 - I'm great, how are you?
 - I'm good, you?
 - Good, you?
 - Great! You?
 - I'm fine, thanks for asking!
 
-+ * thanks for asking
-+ thanks for asking
-- You are welcome.
+
++ when will spring come
+- Spring is long overdue.
 
 + glad to hear it
 - You are welcome.
 
 + i am well
-- glad to hear it!
+- Glad to hear it!
 
 
 + you are welcome
@@ -34,10 +34,10 @@
 
 
 + i want to ask you something
-- go ahead! {weight=1}
-- shoot! {weight=1}
-- fine. {weight=1}
-- ask me, already! {weight=2}
+- Go ahead! {weight=1}
+- Shoot! {weight=1}
+- Fine. {weight=1}
+- Ask me, already! {weight=2}
 
 + are you a bot
 - No, why would you say that? {weight=4}
@@ -51,7 +51,7 @@
 
 
 + the answer is cloudy
-- what does that mean?
+- What does that mean?
 
 
 + *
