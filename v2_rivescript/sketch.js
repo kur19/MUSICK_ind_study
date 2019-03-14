@@ -1,9 +1,11 @@
 /*jshint esversion: 6 */
 
+// variable used to get objects to top level
 var der;
 
 let agent = {};
 
+let selfFeedback = false;
 
 
 function setup() {
@@ -15,8 +17,6 @@ function draw(){
     let node = document.querySelector('#testDiv');
 
     node.innerText = agent.state;
-
-
 }
 
 
@@ -32,6 +32,12 @@ function speechSetup() {
     let speech = new p5.Speech();
     let listener = new p5.SpeechRec('en-US', gotSpeech);
     let continuous = false;
+
+    if( selfFeedback ){
+        continuous = true;
+        console.log("self feedback mode is on");
+    }
+
     let interim = false;
     // listener.start(continuous, interim);
     listener.continuous = continuous;
@@ -39,37 +45,37 @@ function speechSetup() {
 
     // start the listener
     function startListener(){
-        listener.start();
+        if( agent.state !== 'listening'){
+            listener.start();
+        }
     }
 
 
     // ***********************CALLBACK FUNCTIONS*****************************
 
     listener.onStart = function() {
-        console.log("I am listening...");
+        // console.log("I am listening...");
         agent.state = "listening";
     };
     listener.onEnd = function() {
-        console.log("I stopped listening!!!!!!!");
-        agent.state = undefined;
+        // console.log("I stopped listening!!!!!!!");
+        if( !selfFeedback ){ agent.state = undefined; }
     };
 
     // function to execute when speaking starts
     speech.onStart = function() {
-        console.log("started...");
+        // console.log("started...");
         agent.state = "speaking";
     };
 
     // function to execute when speaking stops
     speech.onEnd = function() {
-        console.log("stopped talking...");
-        agent.state = undefined;
+        // console.log("stopped talking...");
+        if( !selfFeedback ){ agent.state = undefined; }
         // restart listener
-        listener.start();
+        if( !selfFeedback ){ startListener(); console.log("test"); }
+
     };
-
-
-
 
 
 
@@ -115,7 +121,6 @@ function speechSetup() {
             startListener();
         }
     }
-
     setInterval(checkAgentState, 1000);
 
 
@@ -126,4 +131,8 @@ function speechSetup() {
     //let input = user_input.value();
 
     //}
+
+
+
+    der = listener;
 }
