@@ -31,7 +31,7 @@ function speechSetup() {
 
     // function to execute when speaking starts
     speech.onStart = function() {
-        // console.log("started...");
+        console.log("started...");
     };
 
     // function to execute when speaking stops
