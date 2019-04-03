@@ -3,9 +3,6 @@
 ! version = 2.0
 
 + *
-<<<<<<< HEAD
-- World peace.
-=======
 - What? {weight=3}
 - You do not want to know. {weight=3}
 - The answer is cloudy. {weight=4}
@@ -19,4 +16,3 @@
 
 + thanks computer
 - And now for something entirely different!
->>>>>>> 7d623c52546293d238f0a35f42bd9347cedd3566
