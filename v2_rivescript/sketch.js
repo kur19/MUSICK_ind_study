@@ -111,11 +111,10 @@ function speechSetup() {
                 // output.html(reply);
                 console.log(reply);
                 clearTimeout(silenceCheckTimer);
-<<<<<<< HEAD
+
                 silenceCheckTimer = setTimeout(function(){
 =======
                 silenceCheckTimer = setTimout( function(){
->>>>>>> bc685ceb810e2067581453de6db4b028bca18f12
                     listener.rec.abort();
                     agent.state = "speaking";
                     kickoffSpeech.speak(kickoffStatements[2]);
