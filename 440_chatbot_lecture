@@ -1,0 +1,27 @@
+// Chatbot Brain for lecture
+
++ hello bot
+-Hello, class!
+
+// Random Replies
+
++ how are you
+- Good :) you?
+- Great! You?
+- I am well!
+
+// Weighted responses
+
++ greetings
+- Hi there!{weight=20}
+- Hello!{weight=25}
+- What do you want?
+
+// Line Breaking
+
++ do Hamlet
+- To be, or not to be,\n
+^ That is the question.\n
+^ Whether tis nobler to fight,\n
+^ The slings and arrows of outrageous fortune,\n
+^ And by opposing, end them.

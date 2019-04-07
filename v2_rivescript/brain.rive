@@ -3,16 +3,16 @@
 ! version = 2.0
 
 + *
-- What? {weight=3}
-- You do not want to know. {weight=3}
-- The answer is cloudy. {weight=4}
-
-+ what
-- my name is a bot
+- I think someone is listening. 
 
 
-+ just give me an answer
-- Do not ask questions you cannot understand.
++ *
+- My name is bot.
+- Who are you?
 
-+ thanks computer
-- And now for something entirely different!
+
++ keep your voice down
+- You keep your voice down!
+
++ Are they still watching
+- Yes we have to distract them.
