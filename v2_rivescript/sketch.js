@@ -111,7 +111,7 @@ function speechSetup() {
                 // output.html(reply);
                 console.log(reply);
                 clearTimeout(silenceCheckTimer);
-                silenceCheckTimer = setTimout( function(){}
+                silenceCheckTimer = setTimout( function(){
                     listener.rec.abort();
                     agent.state = "speaking";
                     kickoffSpeech.speak(kickoffStatements[2]);
@@ -154,7 +154,7 @@ function speechSetup() {
 
 
 let kickoffStatements = [
-  "where did you go?"
-  "What is the meaning of life?"
+  "where did you go?",
+  "what is the meaning of life?",
   "I'm listening."
 ];
