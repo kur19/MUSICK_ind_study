@@ -111,9 +111,6 @@ function speechSetup() {
                 // output.html(reply);
                 console.log(reply);
                 clearTimeout(silenceCheckTimer);
-
-                silenceCheckTimer = setTimeout(function(){
-=======
                 silenceCheckTimer = setTimout( function(){
                     listener.rec.abort();
                     agent.state = "speaking";
