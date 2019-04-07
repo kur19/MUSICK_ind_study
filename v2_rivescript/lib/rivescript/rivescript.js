@@ -368,7 +368,7 @@ const RiveScript = (function() {
 
 		This loading method is asynchronous so you must resolve the promise or
 		await it before you go on to sort the replies.
-
+    
 		For backwards compatibility, this function can take callbacks instead
 		of returning a Promise:
 
